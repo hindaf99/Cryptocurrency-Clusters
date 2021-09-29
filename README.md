@@ -1,6 +1,6 @@
 # Cryptocurrency-Clusters
 
-Background
+# Background
 
 
 You are on the Advisory Services Team of a financial consultancy. One of your clients, a prominent investment bank, is interested in offering a new cryptocurrency investment portfolio for its customers. The company, however, is lost in the vast universe of cryptocurrencies. They’ve asked you to create a report that includes what cryptocurrencies are on the trading market and determine whether they can be grouped to create a classification system for this new investment.
@@ -10,9 +10,9 @@ You have been handed raw data, so you will first need to process it to fit the m
 
 
 
-Instructions
+# Instructions
 
-Data Preparation
+# Data Preparation
 
 
 Read crypto_data.csv into Pandas. The dataset was obtained from CryptoCompare.
@@ -37,7 +37,7 @@ Standardize your dataset so that columns that contain larger values do not undul
 
 
 
-Dimensionality Reduction
+# Dimensionality Reduction
 
 
 Creating dummy variables above dramatically increased the number of features in your dataset. Perform dimensionality reduction with PCA. Rather than specify the number of principal components when you instantiate the PCA model, it is possible to state the desired explained variance. For example, say that a dataset has 100 features. Using PCA(n_components=0.99) creates a model that will preserve approximately 99% of the explained variance, whether that means reducing the dataset to 80 principal components or 3. For this project, preserve 90% of the explained variance in dimensionality reduction. How did the number of the features change?
@@ -47,12 +47,12 @@ Next, further reduce the dataset dimensions with t-SNE and visually inspect the 
 
 
 
-Cluster Analysis with k-Means
+# Cluster Analysis with k-Means
 
 Create an elbow plot to identify the best number of clusters. Use a for-loop to determine the inertia for each k between 1 through 10. Determine, if possible, where the elbow of the plot is, and at which value of k it appears.
 
 
-Recommendation
+# Recommendation
 
 Based on your findings, make a brief (1-2 sentences) recommendation to your clients. Can the cryptocurrencies be clustered together? If so, into how many clusters?
 
